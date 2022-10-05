@@ -1,0 +1,53 @@
+.root {
+    background-color: black;
+    color: white;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    padding: 16px;
+}
+
+.root p {
+    margin: 0;
+}
+
+.root > p {
+    text-align: center;
+}
+
+.root > div{
+    display: flex;
+}
+
+.root > div:last-child {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-color: white;
+}
+
+.square > img {
+    width: 20px;
+    height: 20px;
+}
+
+.root > div:first-of-type button{
+    border-top: none;
+}
+
+.root > div button:first-of-type {
+    border-left: none;
+}
+
+.root > div button:last-of-type {
+    border-right: none;
+}
+
+.root > div:nth-of-type(3) button{
+    border-bottom: none;
+}
